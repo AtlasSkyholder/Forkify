@@ -18,5 +18,8 @@
   "homepage": "https://github.com/AtlasSkyholder/Forkify#readme",
   "devDependencies": {
     "webpack": "^4.41.6"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
   }
 }
