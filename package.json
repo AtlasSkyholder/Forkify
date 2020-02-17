@@ -1,0 +1,22 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtlasSkyholder/Forkify.git"
+  },
+  "author": "Frederico Alves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtlasSkyholder/Forkify/issues"
+  },
+  "homepage": "https://github.com/AtlasSkyholder/Forkify#readme",
+  "devDependencies": {
+    "webpack": "^4.41.6"
+  }
+}
