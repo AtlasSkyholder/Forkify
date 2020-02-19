@@ -70,14 +70,25 @@ const renderButtons = (page, numResults, resPerPage) => {
     button = createButton(page, 'next');
   } else if (page < pages) {
     //Both buttons
+    button = `
+      ${createButton(page, 'prev')}
+      ${createButton(page, 'next')}
+      `;
   } else if ( page === pages) {
     // Only button to go to prev page
+    button = createButton(page, 'prev');
   }
+
+  elements.searchResPages.insertAdjacentHTML('afterbegin', button);
 };
 
 export const renderResults = (recipes, page = 1, resPerPage = 10) => {
+  // render results of current page
   const start = (page - 1) * resPerPage;
   const end = page * resPerPage;
   
   recipes.slice(start, end).forEach(renderRecipe);
+
+  //render pagination buttons
+  renderButtons(page, recipes.length, resPerPage);
 };
