@@ -8,7 +8,9 @@ module.exports = {
     filename: 'js/bundle.js'
   },
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
+    inline:true,
+    port: 7500
   },
   plugins: [
     new HtmlWebpackPlugin ({
