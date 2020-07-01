@@ -1,0 +1,10 @@
+{
+  "apps" : [
+    {
+      "name"      : "Forkify",
+      "script"    : "npx",
+      "interpreter": "none",
+      "args": "npm start"
+    }
+  ]
+}
